@@ -11,8 +11,7 @@ After preparing spark you can follow next steps:
  - create package (`./sbt assembly` from project main dir)
  - invoke command
  ```
- $SPARK_HOME bin/spark-submit --class  pl.example.spark.TestClass --master local[4] target/scala-2.10/spark-avro-issue-assembly-0.0.1-SNAPSHOT.jar \
- file:///direct_path_to_project_main_dir/testData.avro file:///direct_path_to_output1 file:///direct_path_to_output1
+ $SPARK_HOME bin/spark-submit --class  pl.example.spark.TestClass --master local[4] target/scala-2.10/spark-avro-issue-assembly-0.0.1-SNAPSHOT.jar file:///direct_path_to_project_main_dir/testData.avro file:///direct_path_to_output1 file:///direct_path_to_output1
  ```
 
  As a result two directories will be created with results:
