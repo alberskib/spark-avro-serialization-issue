@@ -1,0 +1,9 @@
+@namespace("pl.example.avro")
+protocol DataProt {
+
+  record Data{
+    string userId;
+    string date;
+    string name;
+  }
+}
